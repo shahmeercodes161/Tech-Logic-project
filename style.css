@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.banner-img img{
+    width: 63%;
+    height: auto;
+}
+
+.banner-img{
+    display: flex;
+    justify-content: center;
+align-items: center;
+height: 130vh;
+background: radial-gradient(circle, #1a3a5f 0%, #050a14 100%);
+mix-blend-mode: multiply;
+}
+/* .hello-text{
+    background-color: none;
+    position: relative;
+    bottom: 930px;
+    right: 70px;
+    background-color: transparent;
+} */
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+padding-bottom: 30px;
+background: linear-gradient(to bottom, #0a192f 0%, #112240 100%);
+}
+
+.btn-1-for_spare_parts button{
+    background-color: #1a73e8; 
+    color: white;              
+    padding: 10px 24px;        
+    border: none;             
+    border-radius: 8px;        
+    font-size: 16px;           
+    font-weight: bold;        
+    cursor: pointer;          
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.btn-Ai-integrated-chatbot button{
+     background-color: #1a73e8; 
+    color: white;              
+    padding: 10px 24px;        
+    border: none;             
+    border-radius: 8px;        
+    font-size: 16px;           
+    font-weight: bold;        
+    cursor: pointer; 
+}
+
+
+/* --- Responsive Rules --- */
+
+/* For Tablet and Mobile (768px and below) */
+@media (max-width: 768px) {
+    .banner-img {
+        height: auto;       /* Let the height adjust naturally */
+        padding: 40px 0;    /* Add some space at top and bottom */
+    }
+
+    .banner-img img {
+        width: 90%;         /* Make the image larger on mobile */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;    /* Center them horizontally */
+        gap: 15px;              /* Space between stacked buttons */
+        padding-bottom: 50px;
+    }
+
+    .btn-1-for_spare_parts button, 
+    .btn-Ai-integrated-chatbot button {
+        width: 250px;           /* Make buttons a uniform width on mobile */
+        padding: 15px 0;        /* Make them easier to tap */
+    }
+}
+
+/* For small phones (480px and below) */
+@media (max-width: 480px) {
+    .banner-img img {
+        width: 100%;            /* Full width on very small screens */
+    }
+}
