@@ -18,13 +18,12 @@ height: 130vh;
 background: radial-gradient(circle, #1a3a5f 0%, #050a14 100%);
 mix-blend-mode: multiply;
 }
-/* .hello-text{
-    background-color: none;
-    position: relative;
-    bottom: 930px;
-    right: 70px;
-    background-color: transparent;
-} */
+.hello-text img {
+  width: 50%;
+  position: absolute;
+  bottom: 340px;
+  mix-blend-mode: screen; 
+}
 .buttons{
     display: flex;
     justify-content: center;
