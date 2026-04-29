@@ -21,7 +21,7 @@ mix-blend-mode: multiply;
 .hello-text img {
   width: 50%;
   position: absolute;
-  bottom: 340px;
+  bottom: 300px;
   mix-blend-mode: screen; 
 }
 .buttons{
@@ -135,7 +135,6 @@ button:hover {
 
 body {
     margin: 0;
-    background-color: #0B0F19;
     font-family: Arial, sans-serif;
 }
 
@@ -144,6 +143,9 @@ body {
     align-items: center;
     padding: 12px 40px;
     background-color: #0B0F19;
+        position: relative;
+    z-index: 1000;
+
 }
 
 .logo {

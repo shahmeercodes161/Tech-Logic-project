@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item-line-1{
+    display: flex;
+    gap: 100px;
+padding-left: 50px;
+}
+
+.item-line-2{
+    display: flex;
+    gap: 100px;
+padding-left: 50px;
+}
+
+.item-line-3{
+    display: flex;
+    gap: 100px;
+padding-left: 50px;
+}.item-line-4{
+    display: flex;
+    gap: 100px;
+padding-left: 50px;
+}.item-line-5{
+    display: flex;
+    gap: 100px;
+padding-left: 50px;
+}
