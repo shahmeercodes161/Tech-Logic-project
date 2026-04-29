@@ -1,41 +1,25 @@
-console.log("javascript connected");
+let users = [
+    { email: "abc@gmail.com", password: "134" },
+    { email: "shahmeer@gmail.com", password: "741" },
+    { email: "test1@gmail.com", password: "graphitech@1" },
+    { email: "abdullahansari@gmail.com", password: "123" },
+    { email: "alisheikh@gmail.com", password: "saylani" },
+    { email: "zunain@gmail.com", password: "786" },
+    { email: "saylani@gmail.com", password: "96" }
+];
 
-let emailList = ["abc@gmail.com", "shahmeer@gmail.com", "test1@gmail.com","abdullahansari@gmail.com","alisheikh@gmail.com","zunain@gmail.com","saylani@gmail.com"];
-function checkemail() {
-    let userInput = document.getElementById("userEmail").value;
-    let found = false;
 
-    for (let i = 0; i < emailList.length; i++) {
-        if (emailList[i] === userInput) {
-            found = true;
-            break; 
-        }
-    }
+function login() {
+    let emailInput = document.getElementById("userEmail").value;
+    let passwordInput = document.getElementById("userPassword").value;
 
-    if (found) {
-        alert("Successfully login");
+    let isValid = users.some(user => 
+        user.email === emailInput && user.password === passwordInput
+    );
+
+    if (isValid) {
+        alert("Login successful ✅");
     } else {
-        alert("Incorrect email");
-    }
-}
-
-
-
-let password = [134,741 , "graphitech@1","123","saylani","786",96];
-function checkpassword() {
-    let passwordInput = document.getElementById("userEmail").value;
-    let found = false;
-
-    for (let i = 0; i < emailList.length; i++) {
-        if (password[i] === passwordInput) {
-            found = true;
-            break; 
-        }
-    }
-
-    if (found) {
-        alert("correct");
-    } else {
-        alert("Incorrect");
+        alert("Invalid email or password ❌");
     }
 }
