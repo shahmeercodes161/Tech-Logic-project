@@ -9,7 +9,8 @@ let users = [
 ];
 
 
-function login() {
+function login(e) {
+    e.preventDefault();
     let emailInput = document.getElementById("userEmail").value;
     let passwordInput = document.getElementById("userPassword").value;
 
@@ -19,6 +20,7 @@ function login() {
 
     if (isValid) {
         alert("Login successful ✅");
+        window.location.href = "index.html";
     } else {
         alert("Invalid email or password ❌");
     }
