@@ -3,18 +3,97 @@
   
   
   
-  * {
+ 
+       *{
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    background-color: #0B0F19;
-    font-family: Arial, sans-serif;
+.item-container{
+    background-color: rgb(36, 39, 106);
+padding: 10px;
 }
+.item-line-1{
+    display: flex;
+    gap: 50px;
+padding-left: 50px;
+}
+
+.item-line-2{
+    display: flex;
+    gap: 50px;
+padding-left: 50px;
+}
+
+.item-line-3{
+    display: flex;
+    gap: 50px;
+padding-left: 50px;
+}.item-line-4{
+    display: flex;
+    gap: 50px;
+padding-left: 50px;
+}.item-line-5{
+    display: flex;
+    gap: 50px;
+padding-left: 50px;
+}
+
+
+.main-container{
+    display: flex;
+}
+
+.leftpannel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(38, 38, 159);
+}
+
+.leftpannel h3{
+    font-size: 30px;
+    color: #f4f4f4;
+}
+
+
+.sidebar  .sidebar-2 .sidebar-3 .sidebar-4{
+  width: 200px;
+  height: 100vh; /* Full height */
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between logos */
+  border-right: 1px solid #ddd;
+}
+
+.logo-link-1 img,.logo-link-2 img,.logo-link-3 img,.logo-link-4 img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.logo-link-1 img{
+width: 200px;    
+}
+.logo-link-3 img{
+width: 150px;
+}
+
+.logo-link-2 img{
+    width: 100px;
+}
+
+.logo-link-4 img{
+    width: 100px;
+}
+/* Effect when you touch or hover */
+.logo-link img:hover .logo-link-2 img:hover .logo-link-3 img:hover .logo-link-4 img:hover  {
+  transform: scale(1.1);}
 
 .navbar {
     display: flex;
@@ -112,103 +191,7 @@ body {
        
        
        
-       
-       *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.item-container{
-    background-color: rgb(36, 39, 106);
-padding: 10px;
-}
-.item-line-1{
-    display: flex;
-    gap: 50px;
-padding-left: 50px;
-}
-
-.item-line-2{
-    display: flex;
-    gap: 50px;
-padding-left: 50px;
-}
-
-.item-line-3{
-    display: flex;
-    gap: 50px;
-padding-left: 50px;
-}.item-line-4{
-    display: flex;
-    gap: 50px;
-padding-left: 50px;
-}.item-line-5{
-    display: flex;
-    gap: 50px;
-padding-left: 50px;
-}
-
-
-<<<<<<< HEAD
-.main-container{
-display: flex;
-}
-
-.leftpannel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(38, 38, 159);
-}
-
-.leftpannel h3{
-    font-size: 30px;
-    color: #f4f4f4;
-}
-
-
-.sidebar  .sidebar-2 .sidebar-3 .sidebar-4{
-  width: 200px;
-  height: 100vh; /* Full height */
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: #f4f4f4;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Space between logos */
-  border-right: 1px solid #ddd;
-}
-
-.logo-link-1 img,.logo-link-2 img,.logo-link-3 img,.logo-link-4 img {
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.logo-link-1 img{
-width: 200px;    
-}
-.logo-link-3 img{
-width: 150px;
-}
-
-.logo-link-2 img{
-    width: 100px;
-}
-
-.logo-link-4 img{
-    width: 100px;
-}
-/* Effect when you touch or hover */
-.logo-link img:hover .logo-link-2 img:hover .logo-link-3 img:hover .logo-link-4 img:hover  {
-  transform: scale(1.1);
-=======
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+    
 
 /* FOOTER */
 .footer {
@@ -315,5 +298,5 @@ body {
     .footer-col {
         width: 100%;
     }
->>>>>>> 55093c902b0226da7ea9d40f078bf7f594bc5d24
+
 }
