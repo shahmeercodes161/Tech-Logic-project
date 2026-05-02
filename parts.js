@@ -294,10 +294,10 @@ function createProductCards(products, container) {
 
 // 2. DATA (Maloomat)
 const productsData = [
-    { name: "Honda white side mirror", price: 1400, rating: 4.5, img: "./Assets/hondasidemirror.jpg" },
-    { name: "Civic 1986 pistons", price: 1420, rating: 4.0, img: "./Assets/civic1986piston.jpg" },
-    { name: "mark x bumper", price: 1300, rating: 3.5, img: "./Assets/markxbumper.jpg" },
-    { name: "every lcd", price: 1100, rating: 5.0, img: "./Assets/everylcd.jpg" }
+    { name: "Honda white side mirror", price: 1400, rating: 4.5, img: "./assets/hondasidemirror.jpg" },
+    { name: "Civic 1986 pistons", price: 1420, rating: 4.0, img: "./assets/civic1986piston.jpg" },
+    { name: "mark x bumper", price: 1300, rating: 3.5, img: "./assets/markxbumper.jpg" },
+    { name: "every lcd", price: 1100, rating: 5.0, img: "./assets/everylcd.jpg" }
 ];
 
 // 3. EXECUTION (Chalaana)
