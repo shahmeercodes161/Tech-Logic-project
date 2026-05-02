@@ -164,3 +164,65 @@ body {
         padding: 0 10px;
     }
 }
+
+/* --- TABLET & SMALL LAPTOP (992px) --- */
+@media (max-width: 992px) {
+    .contact-container {
+        padding: 40px 20px;
+        gap: 30px; /* Add space between info and form */
+    }
+
+    .contact-info {
+        width: 45%; /* Slightly wider to prevent text squeezing */
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+}
+
+/* --- MOBILE & TABLET PORTRAIT (768px) --- */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack info on top of form */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info, 
+    .contact-form {
+        width: 100%; /* Take full width on mobile */
+        max-width: 500px; /* Keep form from getting too wide on tablets */
+    }
+
+    .contact-info {
+        margin-bottom: 40px; /* Space before the form starts */
+    }
+
+    .contact-hero {
+        padding: 60px 20px;
+    }
+}
+
+/* --- SMALL PHONES (480px) --- */
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 24px; /* Smaller title for small screens */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        padding: 10px; /* Slightly smaller padding for more space */
+        font-size: 15px; /* Better readability */
+    }
+
+    .contact-form button {
+        padding: 15px; /* Bigger button is easier to tap with a thumb */
+        font-size: 16px;
+    }
+
+    .about-company p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

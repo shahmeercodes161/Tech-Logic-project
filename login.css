@@ -152,3 +152,45 @@ button:hover {
         width: 100%;
     }
 }
+
+
+/* FOR TABLETS AND PHONES */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Stack left and right parts vertically */
+        width: 95%;            /* Use more screen width */
+        height: auto;          /* Let the box grow with content */
+        margin: 20px 0;        /* Add space at top and bottom */
+    }
+
+    .left, .right {
+        width: 100%;           /* Each part takes full width */
+        padding: 30px 20px;    /* Less padding for smaller screens */
+    }
+
+    .right {
+        text-align: center;    /* Center the text on the right side */
+    }
+
+    body {
+        height: auto;          /* Allow scrolling on mobile */
+        align-items: flex-start; /* Start box from the top */
+        padding: 20px 0;
+    }
+}
+
+/* FOR SMALL PHONES */
+@media (max-width: 480px) {
+    .left h2 {
+        font-size: 20px;       /* Smaller heading (سرخی) */
+    }
+
+    .options {
+        flex-direction: column; /* Stack 'Remember Me' and 'Forgot Password' */
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px;         /* Smaller button */
+    }
+}

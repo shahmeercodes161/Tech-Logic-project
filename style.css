@@ -59,7 +59,37 @@ button:hover {
 }
 
 
-
+.img-1{
+    width: 150px;
+}
+.img-2{
+    width: 100px;
+}
+.img-3{
+    width: 100px;
+}
+.img-4{
+    width: 200px;
+}
+.img-5{
+    width: 200px;
+}
+.price-draft{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #1a3a5f;
+}
+.price-draft button{
+  background-color: #1a73e8; 
+    color: white;              
+    padding: 10px 24px;        
+    border: none;             
+    border-radius: 8px;        
+    font-size: 16px;           
+    font-weight: bold;        
+    cursor: pointer; 
+}
 @media (max-width: 768px) {
     .banner-img {
         height: auto;       
@@ -88,6 +118,57 @@ button:hover {
 @media (max-width: 480px) {
     .banner-img img {
         width: 100%;            
+    }
+}
+
+/* --- ADDITIONAL RESPONSIVE RULES --- */
+
+@media (max-width: 768px) {
+    /* 1. HELLO TEXT: Moving it so it doesn't overlap weirdly on mobile */
+    .hello-text img {
+        width: 80%;       /* Make it larger on mobile */
+        bottom: 100px;    /* Bring it down so it stays visible */
+        position: relative; /* Changing from absolute helps with scrolling */
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* 2. PRICE DRAFT: Adjusting the padding and button size */
+    .price-draft {
+        padding: 20px;    /* Less space on sides */
+        text-align: center;
+    }
+
+    .price-draft button {
+        width: 100%;      /* Full width button for easy tapping */
+        max-width: 300px;
+    }
+
+    /* 3. LOGO TRACK: Ensuring logos wrap nicely */
+    .logo-track {
+        gap: 15px;        /* Tighter gap for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* 4. BANNER ADJUSTMENTS: Height fix */
+    .banner-img {
+        height: auto;     /* Prevent the background from being too long */
+        min-height: 50vh;
+    }
+
+    .banner-img img {
+        width: 95%;
+    }
+
+    /* 5. TEXT SIZES: Making titles fit on small phone screens */
+    .footer-top h2 {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .logo-section h2 {
+        font-size: 20px;
     }
 }
  
